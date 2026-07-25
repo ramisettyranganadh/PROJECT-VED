@@ -1,22 +1,40 @@
 # Veda Pure
 
-A website to sell food products online
+A responsive static landing page for a food ecommerce brand.
 
-* mobile friendly
+* Mobile friendly
+* Clean HTML, CSS, and JavaScript
 
-## technologies used
+## Technologies used
 
 * HTML
 * CSS
-* JQuery
 * JavaScript
+* Boxicons
 
-download zip or clone repo (all required files are included)
+This project is ready to publish as a static site.
 
-### view the website here.
+## Deploy
 
-https://peter-kimanzi.github.io/food-ecommerce/
+### GitHub Pages
+1. Push this repository to GitHub.
+2. Go to the repository Settings -> Pages.
+3. Set Source to the branch containing `index.html` (usually `main`).
+4. Set the folder to `/ (root)` and save.
+5. Visit `https://<your-github-username>.github.io/<repo-name>/` after deployment.
 
+### Netlify
+1. Create a new site on netlify.com.
+2. Connect your GitHub repository.
+3. Leave the build command blank.
+4. Set the publish directory to `/`.
+5. Deploy the site.
+
+### Vercel
+1. Create a new project on vercel.com.
+2. Import this repository.
+3. No build command is needed.
+4. Deploy from the root folder.
 
 ## Screenshots
 
