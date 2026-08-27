@@ -588,7 +588,7 @@ section {
     }
 
     .about {
-        background-image: url(assets/dan-gold-4_jhDO54BYg-unsplash.jpg);
+        background-image: url(../assets/dan-gold-4_jhDO54BYg-unsplash.jpg);
         background-attachment: fixed;
     }
 
@@ -720,5 +720,86 @@ section {
 
     .h-xs {
         display: none;
+    }
+}
+
+/* Subtle visual polish: preserve the existing type, spacing, and palette. */
+#home,
+#food-menu-section,
+.footer {
+    position: relative;
+    isolation: isolate;
+}
+
+#home::before,
+#food-menu-section::before,
+.footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#home::before {
+    background: linear-gradient(90deg, rgba(240, 243, 247, .78), rgba(240, 243, 247, .12));
+}
+
+#food-menu-section::before {
+    background: rgba(240, 243, 247, .28);
+}
+
+.footer::before {
+    background: rgba(0, 0, 0, .38);
+}
+
+.menu-item,
+.cart-btn,
+.food-category button,
+.item-wrap,
+.slogan button,
+.input-group button,
+.back-to-top {
+    transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease, color .25s ease;
+}
+
+.menu-item:hover,
+.food-category button:hover,
+.slogan button:hover {
+    transform: translateY(-2px);
+}
+
+.item-wrap {
+    border: 1px solid rgba(15, 157, 88, .08);
+}
+
+.item-wrap:hover {
+    transform: translateY(-6px);
+}
+
+.img-holder:hover {
+    transform: scale(1.08);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 3px solid rgba(15, 157, 88, .35);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #home .slogan {
+        transform: translateY(3rem);
     }
 }
