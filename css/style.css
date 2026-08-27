@@ -144,18 +144,26 @@ section {
     display: inline-block;
 }
 
+.hero-title-brand {
+    font-family: 'Alex Brush', cursive;
+    font-size: 1.15em;
+    position: relative;
+    top: 1.7rem;
+}
+
 .hero-title-v {
     display: inline-block;
-    font-size: 1.4em;
+    font-family: 'Alex Brush', cursive;
+    font-size: 1.7em;
     position: relative;
     top: 1rem;
 }
 
 .hero-title-secondary {
     display: inline-block;
-    font-size: 0.45em;
+    font-size: 0.28em;
     margin-left: 12rem;
-    margin-top: 2.5rem;
+    margin-top: 0;
 }
 
 .hero-tagline {
@@ -616,6 +624,10 @@ section {
     .back-to-top {
         bottom: 6rem;
         right: 1rem;
+    }
+
+    .hero-title-secondary {
+        margin-left: 12rem;
     }
 
     .review-wrap.active {
