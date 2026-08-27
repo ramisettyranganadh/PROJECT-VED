@@ -798,6 +798,100 @@ input:focus-visible {
     }
 }
 
+/* Professional finish: keep the existing Veda Pure design system intact. */
+.nav {
+    background-color: rgba(240, 243, 247, .94);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(15, 157, 88, .12);
+}
+
+#home,
+#food-menu-section {
+    position: relative;
+    isolation: isolate;
+}
+
+#home::before,
+#food-menu-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#home::before {
+    background: linear-gradient(90deg, rgba(240, 243, 247, .94) 0%, rgba(240, 243, 247, .72) 38%, rgba(240, 243, 247, .18) 78%);
+}
+
+#food-menu-section::before {
+    background: rgba(240, 243, 247, .34);
+}
+
+.slogan,
+.food-menu,
+.about-slogan {
+    position: relative;
+    z-index: 1;
+}
+
+.slogan p {
+    max-width: 34rem;
+    line-height: 1.7;
+}
+
+.food-menu,
+.about-slogan {
+    border: 1px solid rgba(15, 157, 88, .1);
+}
+
+.item-wrap {
+    background-color: rgba(255, 255, 255, .72);
+    border: 1px solid rgba(15, 157, 88, .1);
+}
+
+.item-wrap:hover {
+    transform: translateY(-.4rem);
+}
+
+.img-holder:hover {
+    transform: scale(1.06);
+}
+
+.footer {
+    position: relative;
+    isolation: isolate;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: rgba(0, 0, 0, .42);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 3px solid rgba(15, 157, 88, .4);
+    outline-offset: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+    #home .slogan {
+        transform: translateY(2rem);
+    }
+
+    .mb-nav-item {
+        flex: 1;
+    }
+
+    .mb-move-item {
+        width: 33.3333%;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #home .slogan {
         transform: translateY(3rem);

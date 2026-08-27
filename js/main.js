@@ -83,6 +83,6 @@ bottomNavItems.forEach((item, index) => {
         let crrItem = document.querySelector('.mb-nav-item.active')
         crrItem.classList.remove('active')
         item.classList.add('active')
-        bottomMove.style.left = index * 25 + '%'
+        bottomMove.style.left = index * 33.3333 + '%'
     }
 })
