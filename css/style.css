@@ -579,28 +579,101 @@ section {
     display: none;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-    * {
-        font-size: 13px;
+/* Mobile and tablet responsiveness for smartphones */
+@media only screen and (max-width: 768px) {
+    html {
+        -webkit-text-size-adjust: 100%;
     }
 
-    h1 {
-        font-size: 3rem !important;
+    body {
+        padding-top: 64px;
     }
 
-    span {
-        font-size: inherit;
+    .nav {
+        height: 64px;
     }
 
-    .cart-btn i {
-        font-size: 2rem;
+    .menu-wrap {
+        padding: 0.75rem 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .menu.h-xs {
+        display: none;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    .fullheight {
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .bg-img-fixed {
+        background-attachment: scroll;
+    }
+
+    section {
+        padding: 5rem 0;
+    }
+
+    .slogan {
+        text-align: center;
+    }
+
+    .slogan h1 {
+        font-size: 4rem !important;
+        line-height: 0.9;
+    }
+
+    .hero-title-brand {
+        top: 0;
+        font-size: 1.1em;
+    }
+
+    .hero-title-v {
+        top: 0.4rem;
+    }
+
+    .hero-tagline {
+        display: block;
+        margin: 1rem 0 1rem;
+        margin-left: 0;
+        font-size: 1.7rem;
+    }
+
+    .slogan button {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin: 1.5rem auto 0;
+        padding: 1rem 2rem;
+    }
+
+    .slogan > div:last-child {
+        text-align: center;
+    }
+
+    .left-to-right,
+    .right-to-left,
+    .bottom-up,
+    .zoom {
+        transform: none !important;
+        transition: none !important;
     }
 
     .about {
         background-image: url(../assets/dan-gold-4_jhDO54BYg-unsplash.jpg);
-        background-attachment: fixed;
+        background-attachment: scroll;
+    }
+
+    .about-slogan {
+        padding: 2rem 1.5rem;
     }
 
     .about-slogan.start {
@@ -608,36 +681,47 @@ section {
     }
 
     .food-menu {
-        padding: 4rem 0;
-    }
-
-    .food-item {
-        width: 50%;
-        height: 25rem;
+        padding: 2.5rem 1rem;
     }
 
     .food-category {
-        overflow-y: scroll;
+        display: flex;
+        gap: 0.5rem;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .food-category::-webkit-scrollbar {
+        display: none;
     }
 
     .food-category button {
         width: max-content;
+        margin: 0;
+        padding: 0.75rem 1.25rem;
+    }
+
+    .food-item {
+        width: 50%;
+        height: 22rem;
+        padding: 0.5rem;
+    }
+
+    .item-info {
+        margin-top: 1.5rem;
+        padding: 0 0.5rem;
     }
 
     .back-to-top {
-        bottom: 6rem;
+        bottom: 5.25rem;
         right: 1rem;
-    }
-
-    .hero-title-secondary {
-        margin-left: 12rem;
     }
 
     .review-wrap.active {
         transform: unset !important;
     }
-
-    /* MOBILE NAV */
 
     .mb-nav {
         position: fixed;
@@ -682,8 +766,6 @@ section {
         background-color: var(--primary-color);
         transition: .5s ease-in-out;
     }
-
-    /* END MOBILE NAV */
 
     .col-xs-1 {
         width: 8.33%;
@@ -735,6 +817,24 @@ section {
 
     .h-xs {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    * {
+        font-size: 13px;
+    }
+
+    .slogan h1 {
+        font-size: 3.25rem !important;
+    }
+
+    .hero-tagline {
+        font-size: 1.4rem;
+    }
+
+    .food-item {
+        width: 100%;
     }
 }
 
@@ -1410,5 +1510,14 @@ section {
     .slogan p {
         max-width: 17rem;
         font-size: .92rem;
+    }
+
+    .slogan button {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 1.25rem auto 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }
