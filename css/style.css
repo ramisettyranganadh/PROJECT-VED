@@ -1,10 +1,13 @@
 :root {
-    --primary-color: #0F9D58;
-    --background-color: #f0f3f7;
-    --secon-color: #9da2ad;
-    --grey: #7a7a7b;
+    --primary-color: #2f6b4f;
+    --primary-dark: #1f4937;
+    --background-color: #fbf8f1;
+    --secon-color: #a49b8d;
+    --grey: #5f625b;
+    --ink: #202a23;
+    --cream: #f3eadb;
     --white: #ffffff;
-    --nav-height: 80px;
+    --nav-height: 76px;
 }
 
 * {
@@ -910,19 +913,6 @@ input:focus-visible {
     }
 }
 
-/* Veda Pure storefront refresh */
-:root {
-    --primary-color: #2f6b4f;
-    --primary-dark: #1f4937;
-    --background-color: #fbf8f1;
-    --secon-color: #a49b8d;
-    --grey: #5f625b;
-    --ink: #202a23;
-    --cream: #f3eadb;
-    --white: #ffffff;
-    --nav-height: 76px;
-}
-
 * {
     font-family: 'DM Sans', sans-serif;
 }
@@ -1012,7 +1002,7 @@ section {
     max-width: 570px;
     padding: 2rem 0;
     position: relative;
-    left: -2rem;
+    left: 0.75rem;
 }
 
 .slogan h1 {
@@ -1035,6 +1025,8 @@ section {
     display: inline-block;
     color: var(--primary-color);
     white-space: nowrap;
+    position: relative;
+    left: 1.5rem;
 }
 
 .hero-title-v {
@@ -1042,19 +1034,9 @@ section {
     font-size: 1em;
 }
 
-.hero-title-secondary {
-    display: inline-block;
-    width: max-content;
-    margin: 0 0 0 .22em;
-    color: var(--primary-color);
-    font-family: 'Playfair Display', serif;
-    font-size: 1em;
-    letter-spacing: -.04em;
-}
-
 .hero-tagline {
     display: block;
-    margin: 1.25rem 0 1rem .08em;
+    margin: 1.25rem 0 1rem 2.5rem;
     color: var(--primary-dark);
     font-family: 'Playfair Display', serif;
     font-size: 1.15rem;
@@ -1067,12 +1049,14 @@ section {
     color: var(--grey);
     font-size: 1.05rem;
     line-height: 1.8;
+    margin-left: 2.5rem;
+    margin-bottom: 7px;
 }
 
 .slogan button,
 .input-group button {
     padding: .9rem 1.45rem;
-    margin: 2rem 0 0;
+    margin: 0 0 0 375px;
     border: 0;
     border-radius: 999px;
     background: var(--primary-color);
