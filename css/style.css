@@ -943,13 +943,18 @@ html {
 }
 
 .logo {
-    color: var(--ink);
+    color: var(--primary-color);
     font-size: 1.7rem;
 }
 
 .logo::after {
-    content: '.';
+    content: ' .';
     color: var(--primary-color);
+}
+
+.hero-title-dot {
+    color: var(--primary-color);
+    margin-left: 0.12em;
 }
 
 .menu-item {
@@ -1300,6 +1305,11 @@ section {
         margin-left: .18em;
     }
 
+    .hero-title-brand,
+    .hero-title-v {
+        white-space: nowrap;
+    }
+
     .about-slogan,
     .food-menu {
         padding: 2rem 1.25rem;
@@ -1355,5 +1365,50 @@ section {
 
     .footer {
         padding-bottom: 7rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+
+    .nav {
+        height: 60px;
+    }
+
+    .menu-wrap {
+        padding: 0 .75rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    #home {
+        padding: 3rem 0 4rem;
+        background-position: 62% center;
+    }
+
+    .slogan {
+        padding-top: .5rem;
+    }
+
+    .slogan h1 {
+        font-size: clamp(2.5rem, 18vw, 3.5rem) !important;
+        line-height: .9 !important;
+    }
+
+    .hero-title-brand {
+        top: .2rem;
+    }
+
+    .hero-title-v {
+        top: .1rem;
+    }
+
+    .slogan p {
+        max-width: 17rem;
+        font-size: .92rem;
     }
 }
