@@ -1048,8 +1048,13 @@ html {
 }
 
 .logo::after {
-    content: ' .';
+    content: '.';
     color: var(--primary-color);
+    font-size: inherit;
+    line-height: 1;
+    display: inline-block;
+    margin-left: .06em;
+    vertical-align: text-top;
 }
 
 .hero-title-dot {
