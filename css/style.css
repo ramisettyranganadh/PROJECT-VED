@@ -154,14 +154,6 @@ section {
     top: 1.7rem;
 }
 
-.hero-title-v {
-    display: inline-block;
-    font-family: 'Alex Brush', cursive;
-    font-size: 1.7em;
-    position: relative;
-    top: 1rem;
-}
-
 .hero-title-secondary {
     display: inline-block;
     font-size: 0.28em;
@@ -1403,16 +1395,30 @@ section {
     }
 
     .slogan h1 {
-        font-size: clamp(3rem, 14vw, 4.1rem) !important;
+        font-size: clamp(3rem, 17vw, 5rem) !important;
+        line-height: .9 !important;
+    }
+
+    .hero-title-wrap {
+        display: block;
+        margin-bottom: .5rem;
+    }
+
+    .hero-title-brand {
+        display: inline-block;
+        font-size: clamp(3rem, 16vw, 5rem);
+        line-height: 1;
+        top: 0;
+        white-space: nowrap;
     }
 
     .hero-title-secondary {
         margin-left: .18em;
     }
 
-    .hero-title-brand,
-    .hero-title-v {
-        white-space: nowrap;
+    .hero-tagline {
+        margin-left: 0;
+        font-size: 1.7rem;
     }
 
     .about-slogan,
@@ -1500,16 +1506,18 @@ section {
     }
 
     .slogan h1 {
-        font-size: clamp(2.5rem, 18vw, 3.5rem) !important;
+        font-size: clamp(2.7rem, 18vw, 4rem) !important;
         line-height: .9 !important;
     }
 
     .hero-title-brand {
-        top: .2rem;
+        font-size: clamp(2.5rem, 18vw, 3.6rem);
+        top: 0;
+        line-height: 1;
     }
 
-    .hero-title-v {
-        top: .1rem;
+    .hero-tagline {
+        font-size: 1.3rem;
     }
 
     .slogan p {
